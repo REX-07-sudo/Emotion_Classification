@@ -6,9 +6,9 @@ import os
 import tempfile
 
 
-model = joblib.load("emotion_model.pkl")
-scaler = joblib.load("scaler.pkl")
-le = joblib.load("label_encoder.pkl")
+model = joblib.load("emotion_model_7class.pkl")
+scaler = joblib.load("scaler_7class.pkl")
+le = joblib.load("label_encoder_7class.pkl")
 
 def extract_features(file_path):
     try:
