@@ -45,25 +45,42 @@ This project focuses on classifying human emotions from audio recordings using M
 
 ## Accuracy Metrics (Before Drop)
 
+Final Model Macro-F1: 0.7738060923383789
+              precision    recall  f1-score   support
 
+       angry       0.89      0.85      0.87        75
+        calm       0.81      0.87      0.84        75
+     disgust       0.75      0.77      0.76        39
+     fearful       0.75      0.83      0.78        75
+       happy       0.86      0.76      0.81        75
+     neutral       0.76      0.82      0.78        38
+         sad       0.76      0.67      0.71        75
+   surprised       0.60      0.67      0.63        39
 
-
-
+    accuracy                           0.78       491
+   macro avg       0.77      0.78      0.77       491
+weighted avg       0.79      0.78      0.78       491
 
 ---
-
-
-
-
-
 
 ##  Accuracy Metrics (After dropping **surprised** class)
 
+Classification Report (7 Classes):
+              precision    recall  f1-score   support
 
+       angry       0.86      0.87      0.86        75
+        calm       0.80      0.91      0.85        75
+     disgust       0.73      0.77      0.75        39
+     fearful       0.77      0.80      0.78        75
+       happy       0.87      0.83      0.85        75
+     neutral       0.76      0.82      0.78        38
+         sad       0.78      0.63      0.70        75
+
+    accuracy                           0.80       452
+   macro avg       0.80      0.80      0.80       452
+weighted avg       0.80      0.80      0.80       452
 
 ---
-
-
 
 ##  Streamlit Web App
 
@@ -73,8 +90,8 @@ This project focuses on classifying human emotions from audio recordings using M
 
 ---
 
-
 ## Note
 
 - Trained model uses only 7 emotions.
+- Both confusion matrices are in .ipynb file.
 
