@@ -105,4 +105,5 @@ This project focuses on classifying human emotions from audio recordings using M
 - Trained model uses only 7 emotions.
 - Both confusion matrices are in .ipynb file.
 - As surprised class was dropped so don't test the web app on surprised emotion audio.
+- Tested the web app on **local host**.
 
