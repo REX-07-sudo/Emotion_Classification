@@ -106,4 +106,5 @@ This project focuses on classifying human emotions from audio recordings using M
 - Both confusion matrices are in .ipynb file.
 - As surprised class was dropped so don't test the web app on surprised emotion audio.
 - Tested on deploying on streamlit and requirements.txt is also provided.
+- Use python version 3.9 for deploying on streamlit.
 
