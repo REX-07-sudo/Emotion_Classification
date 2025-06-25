@@ -5,10 +5,14 @@ import joblib
 import os
 import tempfile
 
+BASE_DIR = os.path.dirname(__file__)  
+model_path = os.path.join(BASE_DIR, "emotion_model_7class.pkl")
+scaler_path = os.path.join(BASE_DIR, "scaler_7class.pkl")
+le_path = os.path.join(BASE_DIR, "label_encoder_7class.pkl")
 
-model = joblib.load("emotion_model_7class.pkl")
-scaler = joblib.load("scaler_7class.pkl")
-le = joblib.load("label_encoder_7class.pkl")
+model = joblib.load(model_path)
+scaler = joblib.load(scaler_path)
+le = joblib.load(le_path)
 
 def extract_features(file_path):
     try:
