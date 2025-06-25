@@ -1,12 +1,13 @@
+import sys
+import types
+_fake_core = types.SimpleNamespace()
+import numpy as np
+_fake_core.multiarray = np.core.multiarray
+np._core = _fake_core
+sys.modules['numpy._core'] = np._core
+sys.modules['numpy._core.multiarray'] = np._core.multiarray
 import streamlit as st
 import librosa
-import numpy as np
-if not hasattr(np, '_core'):
-    import types
-    np._core = types.SimpleNamespace()
-    np._core.multiarray = np.core.multiarray
-    sys.modules['numpy._core'] = np._core
-    sys.modules['numpy._core.multiarray'] = np.core.multiarray
 import joblib
 import os
 import tempfile
