@@ -1,3 +1,4 @@
+#READY FOR DEPLOYMENT ON STREAMLIT
 import sys
 import types
 _fake_core = types.SimpleNamespace()
